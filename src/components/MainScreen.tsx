@@ -79,7 +79,7 @@ export default function MainScreen({ onNavigate, bgmActive, onToggleBgm }: MainS
         {/* Cinematic Title Logo */}
         <div id="main-title-block" className="space-y-2 select-none flex justify-center w-full max-w-lg md:max-w-2xl px-4">
           <motion.img
-            src="/src/assets/images/lost_child_logo_1780421006964.png"
+            src="https://github.com/mulgim/lostchild/blob/main/src/assets/images/lost_child_logo_1780421006964.png?raw=true"
             alt="로스트 차일드 심포니아 로고"
             referrerPolicy="no-referrer"
             initial={{ opacity: 0, scale: 0.95 }}
