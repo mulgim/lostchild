@@ -40,7 +40,7 @@ export default function MainScreen({ onNavigate, bgmActive, onToggleBgm }: MainS
       <div 
         id="main-bg-image"
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 scale-105 transition-all duration-1000"
-        style={{ backgroundImage: `url('https://github.com/mulgim/lostchild/blob/main/src/assets/images/music_room_bg_1780419528160.png?raw=true')` }}
+        style={{ backgroundImage: `url('https://github.com/mulgim/lostchild/blob/main/src/assets/images/music_room_bg_1780419528160.png')` }}
       />
       <div id="main-gradient-overlay" className="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-[#0a0a0b]/80 to-[#0a0a0b]/90" />
 
@@ -79,7 +79,7 @@ export default function MainScreen({ onNavigate, bgmActive, onToggleBgm }: MainS
         {/* Cinematic Title Logo */}
         <div id="main-title-block" className="space-y-2 select-none flex justify-center w-full max-w-lg md:max-w-2xl px-4">
           <motion.img
-            src="https://github.com/mulgim/lostchild/blob/main/src/assets/images/lost_child_logo_1780421006964.png?raw=true"
+            src="https://github.com/mulgim/lostchild/blob/main/src/assets/images/lost_child_logo_1780421006964.png"
             alt="로스트 차일드 심포니아 로고"
             referrerPolicy="no-referrer"
             initial={{ opacity: 0, scale: 0.95 }}
