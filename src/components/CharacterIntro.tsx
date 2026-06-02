@@ -28,7 +28,7 @@ export default function CharacterIntro({ affectionPoints, onAdjustAffection }: C
           {/* Main Visual */}
           <img
             id="seoa-portrait-img"
-            src="https://github.com/mulgim/lostchild/blob/main/src/assets/images/portrait_1780419505846.png"
+            src="https://github.com/mulgim/lostchild/blob/main/src/assets/images/portrait_1780419505846.png?raw=true"
             alt="아리아 포트레이트"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2000ms]"
