@@ -7,8 +7,6 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Play, Music, Volume2, VolumeX, Sparkles, Heart } from 'lucide-react';
 import { audioSynth } from '../utils/audioSynth';
-import musicRoomBg from '../assets/images/music_room_bg_1780419528160.png';
-import lostChildLogo from '../assets/images/lost_child_logo_1780421006964.png';
 
 interface MainScreenProps {
   onNavigate: (tab: 'character' | 'setting' | 'secret') => void;
@@ -42,7 +40,7 @@ export default function MainScreen({ onNavigate, bgmActive, onToggleBgm }: MainS
       <div 
         id="main-bg-image"
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 scale-105 transition-all duration-1000"
-        style={{ backgroundImage: `url(${musicRoomBg})` }}
+        style={{ backgroundImage: `url('/src/assets/images/music_room_bg_1780419528160.png')` }}
       />
       <div id="main-gradient-overlay" className="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-[#0a0a0b]/80 to-[#0a0a0b]/90" />
 
@@ -81,7 +79,7 @@ export default function MainScreen({ onNavigate, bgmActive, onToggleBgm }: MainS
         {/* Cinematic Title Logo */}
         <div id="main-title-block" className="space-y-2 select-none flex justify-center w-full max-w-lg md:max-w-2xl px-4">
           <motion.img
-            src={lostChildLogo}
+            src="/src/assets/images/lost_child_logo_1780421006964.png"
             alt="로스트 차일드 심포니아 로고"
             referrerPolicy="no-referrer"
             initial={{ opacity: 0, scale: 0.95 }}
