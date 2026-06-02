@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Gowun+Batang:wght@400;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Gowun Batang", "Noto Serif KR", Georgia, serif;
+  --font-display: "Cinzel", "Gowun Batang", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-gold-50: #fbf8f3;
+  --color-gold-100: #f5edd9;
+  --color-gold-200: #eadcb4;
+  --color-gold-300: #dcc485;
+  --color-gold-400: #c9a050; /* Primary Sophisticated Gold */
+  --color-gold-500: #b5883d;
+  --color-gold-600: #976b2d;
+  --color-gold-700: #7b5224;
+  --color-gold-800: #623f1e;
+  --color-gold-900: #4e321a;
+  --color-gold-950: #29180b;
+
+  --color-romantic-50: #fbf8f3;
+  --color-romantic-100: #f5edd9;
+  --color-romantic-200: #eadcb4;
+  --color-romantic-300: #dcc485;
+  --color-romantic-400: #c9a050; /* Keep high romantic vibes linked to gold */
+  --color-romantic-500: #b5883d;
+  --color-romantic-600: #976b2d;
+  --color-romantic-700: #7b5224;
+  --color-romantic-800: #623f1e;
+  --color-romantic-950: #29180b;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0b] text-[#f4f1ea] overflow-x-hidden antialiased font-sans selection:bg-[#c9a050] selection:text-[#0a0a0b];
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f1f24;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a050;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+  0%, 100% { transform: scale(0.9) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.1) rotate(180deg); opacity: 0.9; }
+}
+
+.animate-sparkle {
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+/* Text-flicker for VN elements */
+@keyframes delicate-flicker {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; text-shadow: 0 0 8px rgba(201, 160, 80, 0.4); }
+}
+
+.animate-delicate-glow {
+  animation: delicate-flicker 4s ease-in-out infinite;
+}
+
+/* Cherry blossom/gold dust fall animation */
+@keyframes petal-fall {
+  0% { transform: translateY(-10vh) translateX(0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(110vh) translateX(100px) rotate(360deg); opacity: 0; }
+}
+
+.animate-petal {
+  animation: petal-fall 10s linear infinite;
+}
+

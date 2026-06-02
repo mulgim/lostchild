@@ -1,0 +1,6 @@
+{
+  "name": "로스트 차일드 심포니아",
+  "description": "눈먼 백금발 소녀 아리아 뒤랑을 돌보고 지켜보는 감성적 미스터리 비주얼 노벨 소설방. 클래식과 재즈가 어우러지는 아늑한 카페의 깊고 아득한 선율 뒤에 숨겨진 차가운 비밀을 파헤쳐보십시오.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
