@@ -40,7 +40,7 @@ export default function MainScreen({ onNavigate, bgmActive, onToggleBgm }: MainS
       <div 
         id="main-bg-image"
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 scale-105 transition-all duration-1000"
-        style={{ backgroundImage: `url('/src/assets/images/music_room_bg_1780419528160.png')` }}
+        style={{ backgroundImage: `url('https://github.com/mulgim/lostchild/blob/main/src/assets/images/music_room_bg_1780419528160.png?raw=true')` }}
       />
       <div id="main-gradient-overlay" className="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-[#0a0a0b]/80 to-[#0a0a0b]/90" />
 
